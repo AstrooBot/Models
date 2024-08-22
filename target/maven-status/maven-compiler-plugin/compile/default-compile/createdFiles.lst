@@ -1,5 +1,12 @@
+com\mycompany\calculadora\Cliente.class
+com\mycompany\calculadora\Conversion.class
+com\mycompany\calculadora\EntradaImagen$1.class
+com\mycompany\calculadora\SalidaImagen.class
+com\mycompany\calculadora\EntradaImagen$3.class
+com\mycompany\calculadora\Entrada.class
+com\mycompany\calculadora\EntradaSalidaTecladoFactory.class
+com\mycompany\calculadora\EntradaSalidaFactory.class
+com\mycompany\calculadora\Calculadora.class
 com\mycompany\calculadora\Salida.class
 com\mycompany\calculadora\Aritmetica.class
-com\mycompany\calculadora\Conversion.class
-com\mycompany\calculadora\Entrada.class
-com\mycompany\calculadora\Calculadora.class
+com\mycompany\calculadora\EntradaImagen$2.class

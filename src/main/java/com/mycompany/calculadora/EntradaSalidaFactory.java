@@ -4,11 +4,8 @@
  */
 package com.mycompany.calculadora;
 
-/**
- *
- * @author estudiantes
- */
-public abstract class Aritmetica {
-     public abstract int sumar(int[] dato);
-    public abstract int multiplicar(int[] dato);   
+
+public abstract class EntradaSalidaFactory {
+    public abstract Salida generarSalida();
+    public abstract Entrada generarEntrada();
 }
