@@ -4,25 +4,20 @@
  */
 package templatemethod;
 
-import java.util.Enumeration;
+import java.util.List;
 
 /**
  *
  * @author Estudiantes
  */
 public class ConcretePark extends AbstractPark {
-    //Implementar una busqueda de diccionario propio como empezar de arriba para abajo o que no busque desde la placa sino por otro atributo
+    
     @Override
-    protected Car searchCar(String id) {
-        Car result = null;
-        Enumeration<String> keys = dict.keys();
-        while (keys.hasMoreElements()) {
-            String k = keys.nextElement();
-            if(k == id) {
-                result = dict.get(k);
-            }    
-        }
-        return result;
+    protected String searchCar(String id) {
+        List<String> keys = (List<String>) dict.keys();
+        int result = keys.indexOf(id); 
+        return result + "";
+    }
+
     }
     
-}

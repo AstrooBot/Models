@@ -4,10 +4,12 @@
  */
 package strategy;
 
-
-import java.util.List;
-
-public interface Strategy {
+public class SalidaTeclado implements Salida{
+    String mensaje;
+    @Override
+    public void enviar(String data) {
+        mensaje = data;
+        System.out.println("Resultado : " + mensaje);
+    }
     
-    public abstract String search(List<Car> listCar,  String id);
 }

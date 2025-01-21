@@ -4,23 +4,21 @@
  */
 package strategy;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
 
 
-public abstract class Context {
-    
-    // Da acceso a las distintas estrategias. las distintas estrategias deben ser distintas formas de crear placas
-    
-    Dictionary<String, Car> dict = new Hashtable<>();
-    Context strategy = null;
+import java.util.List;
+
+public class Context {
+    Salida out = new SalidaTeclado();
+    Strategy strategy = null;
    
-    public abstract void getCar(String id);
-    
-    public void setStrategy(Context strategy) {
+    public void setStrategy(Strategy strategy) {
         this.strategy = strategy;
     }
     
-    
+    public void execute(List<Car> listCar,  String id) {
+        out.enviar(this.strategy.search(listCar, id));
+        
+    }
     
 }

@@ -4,10 +4,8 @@
  */
 package strategy;
 
-
-import java.util.List;
-
-public interface Strategy {
-    
-    public abstract String search(List<Car> listCar,  String id);
+public interface Entrada {
+ 
+    public abstract String capturar();
 }
+

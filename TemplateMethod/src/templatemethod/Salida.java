@@ -2,12 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package strategy;
+package templatemethod;
 
-
-import java.util.List;
-
-public interface Strategy {
-    
-    public abstract String search(List<Car> listCar,  String id);
+public interface Salida {
+public abstract void enviar(String string); 
 }

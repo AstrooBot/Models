@@ -4,10 +4,13 @@
  */
 package strategy;
 
-
-import java.util.List;
-
-public interface Strategy {
-    
-    public abstract String search(List<Car> listCar,  String id);
+/**
+ *
+ * @author astrobot
+ */
+public class Car {
+    String id;
+    public Car(String id) {
+        this.id = id;
+    }
 }

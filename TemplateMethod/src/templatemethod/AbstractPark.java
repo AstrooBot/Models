@@ -9,14 +9,14 @@ public abstract class AbstractPark {
     
     Dictionary<String, Car> dict = new Hashtable<>();
     
-    final public void saveCar(String id, Car car) {
+    final public String saveCar(String id, Car car) {
         this.assignCar(id, car);
-        this.searchCar(id);
+        return this.searchCar(id);
     }
     
     protected void assignCar(String id, Car car) {
         dict.put(id, car);
     }
-    protected abstract Car searchCar(String id);
+    protected abstract String searchCar(String id);
     
 }

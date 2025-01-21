@@ -10,11 +10,16 @@ package templatemethod;
  */
 public class TemplateMethod {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        AbstractPark park = new ConcretePark();
+        Salida out = new SalidaTeclado();
+        Car car1 = new Car("ABC-001");
+        Car car2 = new Car("ABC-002");
+        Car car3 = new Car("ABC-003");
+        
+        out.enviar(park.saveCar(car1.id, car1));
+        out.enviar(park.saveCar(car1.id, car2));
+        out.enviar(park.saveCar(car1.id, car3));
     }
     
 }
