@@ -5,6 +5,7 @@ public class MotorPesado implements Motor {
     public MotorPesado(int id) {
         this.id = id;
     }
+
     @Override
     public int getId() {
         return id;
@@ -12,8 +13,7 @@ public class MotorPesado implements Motor {
 
     @Override
     public void operation(int id) {
-            System.out.println("Operando con motor de id: " + id);
+        System.out.println("Operando con motor de id: " + id);
     }
- 
-    
+
 }
